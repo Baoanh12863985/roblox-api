@@ -20,7 +20,7 @@ app.post("/api", (req, res) => {
     res.send(JSON.stringify("Data received"));
     setTimeout(function(){
         data.data_response = ""
-    }, 100)
+    }, 900)
 });
 
 app.listen(port, () => {
