@@ -18,6 +18,9 @@ app.post("/api", (req, res) => {
     data = req.body;
     data.data_response = data.message;
     res.send(JSON.stringify("Data received"));
+    setTimeout(function(){
+        data.data_response = ""
+    }, 100)
 });
 
 app.listen(port, () => {
